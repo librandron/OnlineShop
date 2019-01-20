@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace OnlineShop
 {
-    public class Stock
+    public class User 
     {
         public int id;
-        public string productName;
-        public int price;
-        public int amount;
+        public string firstName;
+        public string secondName;
+
+    }
+
+    public class Customer : User
+    {
+        public int Wallet { get; set; }
 
         public UserCart UserCart
         {
@@ -20,5 +25,15 @@ namespace OnlineShop
             {
             }
         }
+    }
+
+    public class Admin : User
+    {
+
+    }
+
+    public class Manager : User
+    {
+        public string Company { get; set; }
     }
 }

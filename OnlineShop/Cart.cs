@@ -21,4 +21,9 @@ namespace OnlineShop
 
 
     }
+
+    public class UserCart : Cart
+    {
+        public string productName;
+    }
 }
